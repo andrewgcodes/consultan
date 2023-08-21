@@ -516,26 +516,23 @@ export default function DemoPage() {
                               className="h-full object-cover w-full rounded-md md:rounded-[12px] aspect-video"
                               crossOrigin="anonymous"
                             >
+                              
                               <source
-                                src={
-                                  selectedInterviewer.name === "John"
-                                    ? selected.name === "Behavioral"
-                                      ? "https://liftoff-public.s3.amazonaws.com/DemoInterviewMale.mp4"
-                                      : "https://liftoff-public.s3.amazonaws.com/JohnTechnical.mp4"
-                                    : selectedInterviewer.name === "Richard"
-                                    ? selected.name === "Behavioral"
-                                      ? "https://liftoff-public.s3.amazonaws.com/RichardBehavioral.mp4"
-                                      : "https://liftoff-public.s3.amazonaws.com/RichardTechnical.mp4"
-                                    : selectedInterviewer.name === "Sarah"
-                                    ? selected.name === "Behavioral"
-                                      ? "https://liftoff-public.s3.amazonaws.com/BehavioralSarah.mp4"
-                                      : "https://liftoff-public.s3.amazonaws.com/SarahTechnical.mp4"
-                                    : selected.name === "Behavioral"
-                                    ? "https://liftoff-public.s3.amazonaws.com/DemoInterviewMale.mp4"
-                                    : "https://liftoff-public.s3.amazonaws.com/JohnTechnical.mp4"
-                                }
-                                type="video/mp4"
-                              />
+    src={
+        selectedInterviewer.name === "John"
+        ? (
+            selected.name === "Behavioral"
+            ? "https://cloud-eqx9gs7qd-hack-club-bot.vercel.app/0my-first-video_xxv1gpl1.mp4"
+            : selected.name === "Market Entry"
+            ? "https://cloud-ppcxvnpvh-hack-club-bot.vercel.app/0my-first-video_xmvostou.mp4"
+            : selected.name === "Market Sizing"
+            ? "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4"
+            : "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4" // default fallback in case none of the conditions match
+        )
+        : "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4" // default for when interviewer's name is not John
+    }
+    type="video/mp4"
+/>
                             </video>
                           </div>
                         </div>
