@@ -524,7 +524,7 @@ export default function DemoPage() {
             selected.name === "Behavioral"
             ? "https://cloud-eqx9gs7qd-hack-club-bot.vercel.app/0my-first-video_xxv1gpl1.mp4"
             : selected.name === "Market Entry"
-            ? "https://cloud-ppcxvnpvh-hack-club-bot.vercel.app/0my-first-video_xmvostou.mp4"
+            ? "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4"
             : selected.name === "Market Sizing"
             ? "https://cloud-200looxmm-hack-club-bot.vercel.app/0my-first-video_iqdwh3hq.mp4"
             : "https://cloud-200looxmm-hack-club-bot.vercel.app/0my-first-video_iqdwh3hq.mp4" // default fallback in case none of the conditions match
