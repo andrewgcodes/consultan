@@ -526,10 +526,10 @@ export default function DemoPage() {
             : selected.name === "Market Entry"
             ? "https://cloud-ppcxvnpvh-hack-club-bot.vercel.app/0my-first-video_xmvostou.mp4"
             : selected.name === "Market Sizing"
-            ? "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4"
-            : "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4" // default fallback in case none of the conditions match
+            ? "https://cloud-200looxmm-hack-club-bot.vercel.app/0my-first-video_iqdwh3hq.mp4"
+            : "https://cloud-200looxmm-hack-club-bot.vercel.app/0my-first-video_iqdwh3hq.mp4" // default fallback in case none of the conditions match
         )
-        : "https://cloud-yhmj6bbv3-hack-club-bot.vercel.app/0my-first-video_c2wkia4e.mp4" // default for when interviewer's name is not John
+        : "https://cloud-200looxmm-hack-club-bot.vercel.app/0my-first-video_iqdwh3hq.mp4" // default for when interviewer's name is not John
     }
     type="video/mp4"
 />
