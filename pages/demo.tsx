@@ -1037,7 +1037,7 @@ export default function DemoPage() {
                   className="max-w-lg mx-auto px-4 lg:px-0"
                 >
                   <h2 className="text-4xl font-bold text-[#1E2B3A]">
-                    And an interviewer
+                    Select your interviewer
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
                     More interviewers coming soon.
@@ -1755,11 +1755,11 @@ export default function DemoPage() {
                                 <p>Why this company?</p>
                               </div>
                               <p className="text-wrap grow font-normal text-[7px]">
-                                Why do you want to work for Google?
+                                Why do you want to work for Bain?
                               </p>
                               <div className="flex flex-row space-x-1">
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-gray-300 px-[3px] text-[7px] font-normal hover:bg-gray-50">
-                                  Product Management
+                                  Personal
                                 </p>
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-[#D0E7DC] bg-[#F3FAF1] px-[3px] text-[7px] font-normal hover:bg-[#edf8ea]">
                                   <span className="mr-1 flex items-center text-emerald-600">
@@ -1855,7 +1855,7 @@ export default function DemoPage() {
                               </p>
                               <div className="flex flex-row space-x-1">
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-gray-300 px-[3px] text-[7px] font-normal hover:bg-gray-50">
-                                  Product Management
+                                  Personal
                                 </p>
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-[#D0E7DC] bg-[#F3FAF1] px-[3px] text-[7px] font-normal hover:bg-[#edf8ea]">
                                   <span className="mr-1 flex items-center text-emerald-600">
@@ -2001,15 +2001,14 @@ export default function DemoPage() {
                             <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-zinc-900/[7.5%] group-hover:ring-zinc-900/10"></div>
                             <div className="relative flex h-full flex-col overflow-hidden">
                               <div className="flex items-center text-left text-[#1a2b3b]">
-                                <p>Walk me through this function</p>
+                                <p>Estimate the market size of diet sodas in Japan.</p>
                               </div>
                               <p className="text-wrap grow font-normal text-[7px]">
-                                Explain in as much detail as you can what this
-                                function does, including its time and space...
+                                Think step by step and explain your reasoning.
                               </p>
                               <div className="flex flex-row space-x-1">
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-gray-300 px-[3px] text-[7px] font-normal hover:bg-gray-50">
-                                  Software Engineering
+                                  International
                                 </p>
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-[#D0E7DC] bg-[#F3FAF1] px-[3px] text-[7px] font-normal hover:bg-[#edf8ea]">
                                   <span className="mr-1 flex items-center text-emerald-600">
@@ -2147,12 +2146,11 @@ export default function DemoPage() {
                                 <p>How would you rebuild Twitter?</p>
                               </div>
                               <p className="text-wrap grow font-normal text-[7px]">
-                                Given what you know about Twitter, how would you
-                                architect it from the ground up?
+                                Given what you know about Twitter, what changes might you make?
                               </p>
                               <div className="flex flex-row space-x-1">
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-gray-300 px-[3px] text-[7px] font-normal hover:bg-gray-50">
-                                  Systems Design
+                                  Operations
                                 </p>
                                 <p className="inline-flex items-center justify-center truncate rounded-full border-[0.5px] border-[#D0E7DC] bg-[#F3FAF1] px-[3px] text-[7px] font-normal hover:bg-[#edf8ea]">
                                   <span className="mr-1 flex items-center text-emerald-600">
