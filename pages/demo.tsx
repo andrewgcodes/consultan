@@ -10,36 +10,30 @@ const questions = [
   {
     id: 1,
     name: "Behavioral",
-    description: "From LinkedIn, Amazon, Adobe",
+    description: "Tell me about...",
     difficulty: "Easy",
   },
   {
     id: 2,
-    name: "Technical",
-    description: "From Google, Meta, and Apple",
+    name: "Market Sizing",
+    description: "Estimate the...",
     difficulty: "Medium",
   },
+  {
+    id:3,
+    name:"Market Entry",
+    description:"How would you...",
+    difficulty: "Hard"
+  }
 ];
 
 const interviewers = [
   {
     id: "John",
     name: "John",
-    description: "Software Engineering",
+    description: "Associate at McKinsey",
     level: "L3",
-  },
-  {
-    id: "Richard",
-    name: "Richard",
-    description: "Product Management",
-    level: "L5",
-  },
-  {
-    id: "Sarah",
-    name: "Sarah",
-    description: "Other",
-    level: "L7",
-  },
+  }
 ];
 
 const ffmpeg = createFFmpeg({
@@ -194,12 +188,12 @@ export default function DemoPage() {
 
       const question =
         selected.name === "Behavioral"
-          ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-          : selectedInterviewer.name === "John"
-          ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-          : selectedInterviewer.name === "Richard"
-          ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
-          : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?";
+          ? `Tell me about a time you experienced a team conflict. What did you learn? How did you resolve it?`
+          : selected.name === "Market Sizing"
+          ? "Estimate the market size of GPUs in South Korea."
+          : selected.name === "Market Entry"
+          ? "Costco would like to enter the Brazilian market. What would you suggest?"
+          : "Costco would like to enter the Brazilian market. What would you suggest?";
 
       setStatus("Transcribing");
 
@@ -232,7 +226,7 @@ export default function DemoPage() {
         });
 
         if (results.transcript.length > 0) {
-          const prompt = `Please give feedback on the following interview question: ${question} given the following transcript: ${
+          const prompt = `Please give feedback for a consulting interview candidate's response to the following interview question: ${question}. Here is the candidate's response to the question: ${
             results.transcript
           }. ${
             selected.name === "Behavioral"
@@ -390,7 +384,7 @@ export default function DemoPage() {
                   </p>
                 </div>
                 <Link
-                  href="https://github.com/Tameyer41/liftoff"
+                  href="https://github.com/andrewgcodes/consultan"
                   target="_blank"
                   className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                   style={{
@@ -461,15 +455,15 @@ export default function DemoPage() {
                 <div className="w-full flex flex-col max-w-[1080px] mx-auto justify-center">
                   <h2 className="text-2xl font-semibold text-left text-[#1D2B3A] mb-2">
                     {selected.name === "Behavioral"
-                      ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-                      : selectedInterviewer.name === "John"
-                      ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-                      : selectedInterviewer.name === "Richard"
-                      ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
-                      : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
+          ? `Tell me about a time you experienced a team conflict. What did you learn? How did you resolve it?`
+          : selected.name === "Market Sizing"
+          ? "Estimate the market size of GPUs in South Korea."
+          : selected.name === "Market Entry"
+          ? "Costco would like to enter the Brazilian market. What would you suggest?"
+          : "Costco would like to enter the Brazilian market. What would you suggest?"}
                   </h2>
                   <span className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal mb-4">
-                    Asked by top companies like Google, Facebook and more
+                    Asked by top firms like McKinsey, Bain, BCG, and more.
                   </span>
                   <motion.div
                     initial={{ y: -20 }}
@@ -763,7 +757,7 @@ export default function DemoPage() {
                       Restart demo
                     </button>
                     <Link
-                      href="https://github.com/Tameyer41/liftoff"
+                      href="https://github.com/andrewgcodes/consultan"
                       target="_blank"
                       className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                       style={{
@@ -846,7 +840,7 @@ export default function DemoPage() {
                     Select a question type
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
-                    We have hundreds of questions from top tech companies.
+                    Practice with common interview questions from top consulting firms.
                     Choose a type to get started.
                   </p>
                   <div>
@@ -1046,8 +1040,7 @@ export default function DemoPage() {
                     And an interviewer
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
-                    Choose whoever makes you feel comfortable. You can always
-                    try again with another one.
+                    More interviewers coming soon.
                   </p>
                   <div>
                     <RadioGroup
@@ -1390,7 +1383,7 @@ export default function DemoPage() {
                 <ul className="mb-auto list-none">
                   <li className="list-none flex items-center">
                     <p className="text-[12px] font-extrabold text-[#1E293B]">
-                      Liftoff
+                      Consultan
                     </p>
                   </li>
                   <li className="mt-4 list-none flex items-center rounded-[9px] text-gray-900 py-[2px]">
@@ -1656,26 +1649,22 @@ export default function DemoPage() {
                       className="text-[#1a2b3b] text-[14px] leading-[18px] font-semibold absolute"
                     >
                       {selected.name === "Behavioral"
-                        ? "Tell me about yourself"
-                        : selectedInterviewer.name === "John"
-                        ? "What is a Hash Table, and what is the average case for each of its operations?"
-                        : selectedInterviewer.name === "Richard"
-                        ? "Uber is looking to expand its product line. How would you go about doing this?"
-                        : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
+          ? `Tell me about a time you experienced a team conflict. What did you learn? How did you resolve it?`
+          : selected.name === "Market Sizing"
+          ? "Estimate the market size of GPUs in South Korea."
+          : selected.name === "Market Entry"
+          ? "Costco would like to enter the Brazilian market. What would you suggest?"
+          : "Costco would like to enter the Brazilian market. What would you suggest?"}
                     </motion.span>
 
                     <ul className="mt-[28px] flex">
                       {selected.name === "Behavioral" ? (
                         <li className="list-none max-w-[400px]">
-                          Start off by walking me through your resume. Perhaps
-                          begin with your internships in college and move to
-                          more recent projects.
+                          Please respond in a clear, organized fashion.
                         </li>
                       ) : (
                         <li className="list-none max-w-[400px]">
-                          Start off by explaining what the function does, and
-                          its time and space complexities. Then go into how you
-                          would optimize it.
+                          Please explain your thinking step by step.
                         </li>
                       )}
                     </ul>
